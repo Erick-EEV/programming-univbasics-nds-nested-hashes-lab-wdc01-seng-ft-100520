@@ -7,15 +7,16 @@ KATE_G = { name:  "Kate Gompert", occupation: "None" }
 BRUCE_G = { name:  "Bruce Green", occupation: "Fan of Mildred" }
 
 def assembled_aoh
-  a_o_h = [ DON_G, JOELLE_VD, PAT_M, KATE_G, BRUCE_G]
+  aoh = [ DON_G, JOELLE_VD, PAT_M, KATE_G, BRUCE_G]
 end
   
 def literal_aoh
-   a_o_h = [ DON_G, JOELLE_VD, PAT_M, KATE_G, BRUCE_G]
+   aoh = [ DON_G, JOELLE_VD, PAT_M, KATE_G, BRUCE_G]
 end
- # Using Array literal syntax only, build a nested array that uses the data in
-  # held in the constants
+
 def aoh_lookup(aoh, row, key)
+   aoh = [ DON_G, JOELLE_VD, PAT_M, KATE_G, BRUCE_G]
+   aoh[row][key]
 end
 
 def aoh_update(aoh, row, key, new_value)
